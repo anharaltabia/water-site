@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    direction: rtl;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Tajawal', 'Cairo', system-ui, sans-serif;
+    @apply bg-white text-gray-800;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-brand-blue text-white px-6 py-3 rounded-lg font-bold hover:bg-brand-dark transition-colors duration-300 inline-block;
+  }
+
+  .btn-outline {
+    @apply border-2 border-brand-blue text-brand-blue px-6 py-3 rounded-lg font-bold hover:bg-brand-blue hover:text-white transition-colors duration-300 inline-block;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-brand-dark mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-gray-600 mb-12;
+  }
+}

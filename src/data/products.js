@@ -1,0 +1,42 @@
+export const products = [
+  {
+    id: 1,
+    size: 'الحجم الأول',
+    name: 'عبوة صغيرة',
+    description: 'عبوة عملية مناسبة للاستخدام الشخصي والتنقل اليومي.',
+    color: 'from-sky-400 to-sky-600',
+    icon: '💧',
+  },
+  {
+    id: 2,
+    size: 'الحجم الثاني',
+    name: 'عبوة متوسطة',
+    description: 'الخيار المثالي للمكتب والدراسة والرحلات القصيرة.',
+    color: 'from-blue-400 to-blue-600',
+    icon: '💧',
+  },
+  {
+    id: 3,
+    size: 'الحجم الثالث',
+    name: 'عبوة عائلية',
+    description: 'كمية مناسبة للاستخدام المنزلي على مدار اليوم.',
+    color: 'from-blue-500 to-blue-700',
+    icon: '💧',
+  },
+  {
+    id: 4,
+    size: 'الحجم الرابع',
+    name: 'عبوة كبيرة',
+    description: 'توفير أكبر مع نفس النقاء والجودة الثابتة.',
+    color: 'from-brand-blue to-blue-800',
+    icon: '💧',
+  },
+  {
+    id: 5,
+    size: 'الحجم الخامس',
+    name: 'عبوة عائلية كبيرة',
+    description: 'الأنسب للعائلات والمناسبات والاستهلاك المرتفع.',
+    color: 'from-brand-dark to-brand-blue',
+    icon: '💧',
+  },
+];
