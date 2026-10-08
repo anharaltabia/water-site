@@ -8,7 +8,7 @@ export default function Products() {
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="section-title">منتجاتنا</h2>
-          <p className="section-subtitle">خمسة أحجام تناسب كل الاستخدامات، بنفس النقاء ونفس الجودة الثابتة</p>
+          <p className="section-subtitle">{products.length} أحجام تناسب كل الاستخدامات، بنفس النقاء ونفس الجودة الثابتة</p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
