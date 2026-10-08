@@ -51,3 +51,7 @@ export async function getContact() {
   return rows?.[0] || null;
 }
 export { tursoQuery };
+
+export async function getSocialLinks() {
+  return tursoQuery('SELECT * FROM social_links WHERE is_active = 1 ORDER BY sort_order');
+}
