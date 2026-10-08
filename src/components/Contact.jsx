@@ -31,9 +31,20 @@ export default function Contact() {
               <div>
                 <h3 className="font-bold text-brand-dark mb-1">الهاتف</h3>
                 {contact?.phone1 && <a href={'tel:' + contact.phone1} className="text-gray-600 hover:text-brand-blue block" dir="ltr">{contact.phone1}</a>}
-                {contact?.phone2 && <a href={'tel:' + contact.phone2} className="text-gray-600 hover:text-brand-blue block" dir="ltr">{contact.phone2}</a>}
               </div>
             </div>
+
+            {contact?.phone2 && (
+              <div className="bg-brand-light rounded-2xl p-6 flex items-start gap-4">
+                <div className="w-12 h-12 bg-purple-500 text-white rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                </div>
+                <div>
+                  <h3 className="font-bold text-brand-dark mb-1">البريد الإلكتروني</h3>
+                  <a href={'mailto:' + contact.phone2} className="text-gray-600 hover:text-brand-blue block" dir="ltr">{contact.phone2}</a>
+                </div>
+              </div>
+            )}
 
             <div className="bg-brand-light rounded-2xl p-6 flex items-start gap-4">
               <div className="w-12 h-12 bg-brand-blue text-white rounded-xl flex items-center justify-center flex-shrink-0">
